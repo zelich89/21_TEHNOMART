@@ -1,7 +1,7 @@
 .cart {
   position: relative;
   height: 123px;
-  background-color: greenyellow;
+  //background-color: greenyellow;
   &__name {
 
     @include font(bold, 24px, 30px);
