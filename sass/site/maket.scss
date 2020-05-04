@@ -11,28 +11,6 @@
       display: none;
       @if $maket-visible == 1 {
         display: block;
-        @media (max-width: $desktop) {
-          display: none;
-        }
-      }
-    }
-    &--tablet {
-      display: none;
-      @if $maket-visible == 1 {
-        @media (max-width: $desktop) {
-          display: block;
-        }
-        @media (max-width: $tablet) {
-          display: none;
-        }
-      }
-    }
-    &--mobile {
-      display: none;
-      @if $maket-visible == 1 {
-        @media (max-width: $tablet) {
-          display: block;
-        }
       }
     }
   }

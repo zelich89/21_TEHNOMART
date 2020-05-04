@@ -1,0 +1,86 @@
+.write-us {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 600px;
+  background-color: #fff;
+  box-shadow: 0 0 20px 10px rgba(0,0,0,0.25);
+  border-top: 7px solid #ff5257;
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    &--indent {
+      padding: 50px 80px 0;
+    }
+  }
+  &__content {
+    width: 50%;
+    &--indent {
+      margin-bottom: 20px;
+    }
+  }
+  &__label {
+    font-family: 'PT Sans', sans-serif;
+    @include font(bold, 18px, 1);
+    margin-bottom: 13px;
+  }
+  &__input {
+    width: 100%;
+    border-radius: 2px;
+    border: 2px solid #dee3e4;
+    font-family: 'PT Sans', sans-serif;
+    @include font(normal, 13px, 24px);
+    padding: 5px 15px;
+    &:first-child {
+      //padding-right: 10px;
+    }
+    &:last-child {
+      //padding-left: 10px;
+    }
+  }
+  &__textarea {
+    width: 100%;
+    border-radius: 2px;
+    border: 2px solid #dee3e4;
+    font-family: 'PT Sans', sans-serif;
+    @include font(normal, 13px, 24px);
+    padding: 5px 15px;
+    height: 115px;
+    &--indent {
+      margin-bottom: 70px;
+    }
+  }
+  &__button {
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 5;
+    &--indent {
+      margin-bottom: 35px;
+    }
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 75%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #f4f4f4;
+  }
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-50%, 50%);
+    cursor: pointer;
+  }
+  .svg {
+    @include square-size(20px);
+  }
+  &.active {
+    display: block;
+  }
+}

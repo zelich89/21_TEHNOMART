@@ -1,0 +1,30 @@
+.products {
+  &__warp {
+    @extend .warps;
+    }
+  &__green {
+    height: 123px;
+    background-color: greenyellow;
+    &--x2 {
+      height: 266px;
+    }
+    &--tops {
+      margin-top: 20px;
+    }
+  }
+  &__items {
+    margin-right: 0;
+    margin-left: 0;
+    &:not(:nth-child(2)) {
+      margin-bottom: 20px;
+    }
+  }
+  &__item {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  &--indent {
+    padding: 60px 0;
+  }
+}

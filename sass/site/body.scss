@@ -9,6 +9,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Cuprum', sans-serif;
 }
 
 ul, li {
@@ -19,6 +20,13 @@ ul, li {
 
 a {
   text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+img {
+  vertical-align: top;
 }
 
 textarea {
@@ -34,7 +42,7 @@ input, select, button {
 }
 
 .dn {
-  display: none;
+  display: none !important;
 }
 
 /*.visible-on-desktop {

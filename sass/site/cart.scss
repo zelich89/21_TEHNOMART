@@ -1,0 +1,92 @@
+.cart {
+  position: relative;
+  height: 123px;
+  background-color: greenyellow;
+  &__name {
+
+    @include font(bold, 24px, 30px);
+    &--indent {
+      padding-bottom: 15px;
+    }
+  }
+  &__button {
+    text-transform: uppercase;
+    @include font(normal, 14px, 18px);
+    text-align: center;
+    &--big {
+      width: 200px;
+    }
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-25%,-50%);
+  }
+  &__add {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    bottom: 0;
+    left: 20px;
+    //background-color: rgba(blue, .3);
+  }
+  &__bigger {
+    @include font(bold, 36px, 1);
+    color: white;
+    &--indent {
+      padding-bottom: 10px;
+    }
+  }
+  &__label {
+    @include font(normal, 18px, 24px);
+    color: white;
+    &--indent {
+      padding-bottom: 100px;
+    }
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+  &.new:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: url('https://i.imgur.com/pZXNFdB.png') no-repeat;
+  }
+  &--x2 {
+    height: 266px;
+  }
+  &--tops {
+    margin-top: 20px;
+  }
+  .svg {
+    @include square-size(80px);
+  }
+  //Colors
+  &--color-honey {
+    background-color: #FFBF47;
+    color: #fff;
+  }
+  &--color-sky {
+    background-color: #3BBCE3;
+    color: #fff;
+  }
+  &--color-purple {
+    background-color: #DC91D8;
+    color: #fff;
+  }
+  &--color-olive {
+    background-color: #8ED78F;
+    color: #fff;
+  }
+
+  &--indent {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+}

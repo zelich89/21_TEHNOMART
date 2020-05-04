@@ -1,0 +1,75 @@
+.company {
+  position: relative;
+  z-index: 2 ;
+  &__warp {
+    @extend .warps;
+    &--indent {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__about {
+    width: 58%;
+  }
+  &__contacts {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__title {
+    text-transform: uppercase;
+    &--indent {
+      padding-bottom: 25px;
+    }
+  }
+  &__text {
+    font-family: 'PT Sans', sans-serif;
+    @include font(normal, 13px, 24px);
+    &--indent {
+      padding-bottom: 25px;
+    }
+  }
+  &__list {
+    &--indent {
+      padding-bottom: 25px;
+    }
+  }
+  &__item {
+    position: relative;
+    padding: 10px 35px;
+    @include font(normal, 18px, 19px);
+    &:before {
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 25px;
+      height: 2px;
+      background-color: #EE3643;
+    }
+  }
+  &__map {
+    &--indent {
+      margin-bottom: 40px;
+    }
+  }
+  &__button {
+    text-transform: uppercase;
+    text-align: center;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  &--bg {
+    background-color: #fff;
+  }
+  &--indent {
+    padding: 80px 0;
+  }
+}

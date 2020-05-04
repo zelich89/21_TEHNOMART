@@ -1,0 +1,24 @@
+.social {
+  display: flex;
+  &__item {
+    @include square-size(45px);
+    border-radius: 50%;
+    color: white;
+    transition: color $transition-time ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .svg {
+      @include square-size(21px);
+    }
+    &:hover {
+      color: darken(white, 25%);
+    }
+    &--dark {
+      background-color: #212A3A;
+    }
+    &--indent:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+}

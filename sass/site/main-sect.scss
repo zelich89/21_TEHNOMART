@@ -1,0 +1,74 @@
+.main-sect {
+  &__warp {
+    @extend .warps;
+    &--indent {
+      padding-right: 10px;
+      padding-left: 10px;
+      padding-bottom: 60px;
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    &--indent {
+      padding-top: 48px;
+      padding-bottom: 40px;
+    }
+  }
+  &__label {
+    //width: 33%;
+    color: $primary;
+    @include font(normal, 16px, 23px);
+    font-style: italic;
+    &--indent {
+      padding-left: 50px;
+    }
+  }
+  &__input-block {
+    position: relative;
+    width: 33%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__input {
+    background-color: transparent;
+    padding: 4px 12px 4px 40px;
+    border: 4px solid white;
+    color: $primary;
+    width: 100%;
+    @include font(normal, 21px, 28px);
+     &::-webkit-input-placeholder {
+       color: $primary;
+    }
+  }
+  &__input-text {
+    @include font(normal, 14px, 24px);
+  }
+  &__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #B7BFC8;
+    .svg {
+      @include square-size(20px);
+    }
+  }
+  &__buttons {
+    width: 30%;
+  }
+  &__button {
+    @include font(normal, 21px, 21px);
+  }
+  &__nav {
+    border: 5px solid fuchsia;
+    &--indent {
+      padding-bottom: 60px;
+    }
+  }
+  &--bg {
+    background-color: #f3f7f8;
+  }
+}

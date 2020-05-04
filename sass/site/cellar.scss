@@ -1,0 +1,41 @@
+.cellar {
+  &__warp {
+    @extend .warps;
+    display: flex;
+  }
+  &__wrapper {
+    width: 50%
+  }
+  &__logo {
+    &--indent {
+      margin-bottom: 30px;
+    }
+  }
+  &__text {
+    @include font(normal, 18px, 24px);
+    color: #ffffff;
+  }
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: 20%;
+    color: white;
+    @include font(normal, 18px, 24px);
+    padding-top: 35px;
+    &:nth-child(6) {
+      padding-left: 20px;
+    }
+    &:nth-child(n+6) {
+      color: #ffd180;
+      width: 25%;
+    }
+  }
+  &--bg {
+    background-color: #32425c;
+  }
+  &--indent {
+    padding-bottom: 50px;
+  }
+}

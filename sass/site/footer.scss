@@ -1,0 +1,33 @@
+.footer {
+  &__warp {
+    @extend .warps;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__copyright {
+    @include font(normal, 16px, 18px);
+    color: white;
+  }
+  &__shapes {
+    width: 33%;
+    display: flex;
+  }
+  &__item {
+    width: 50%;
+    color: white;
+  }
+  &__link {
+    color: #FFD180;
+    transition: color $transition-time ease;
+    &:hover {
+      color: darken(#FFD180, 25%);
+    }
+  }
+
+  &--bg {
+    background-color: #293449;
+  }
+  &--indent {
+    padding: 37px 0;
+  }
+}

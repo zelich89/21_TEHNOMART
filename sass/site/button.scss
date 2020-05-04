@@ -1,0 +1,43 @@
+.button {
+  display: inline-block;
+  position: relative;
+  padding: 12px;
+  font-family: 'Cuprum', sans-serif;
+  cursor: pointer;
+  @include font(normal, 18px, 1);
+  color: white;
+  &__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+    .svg {
+      @include square-size(20px);
+    }
+  }
+  &--radius {
+    border-radius: 3px;
+  }
+  &--green {
+    background-color: #63a63e;
+  }
+  &--black {
+    background-color: rgba(black, .1);
+    width: 135px;
+  }
+  &--red {
+    background-color: #EE3643;
+    border-radius: 2px;
+  }
+  &--white {
+    background-color: #fff;
+    color: #000;
+    .svg {
+      color: #c5c5c5;
+    }
+  }
+  &--with-icon {
+    padding-left: 40px;
+  }
+}

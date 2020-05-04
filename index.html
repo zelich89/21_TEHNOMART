@@ -5,28 +5,524 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css">
 
     <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAD///8AQzbuAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEREREREREREREREQARERERERERABEREREREREAEREREREREQARERERERERABEREREREREAEREREREREQARERERERERABEREREREREAEREREREREQARERERERERABERERERAAAAAAAREREAAAAAABEREREREREREREREREREREREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon" />
 
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic-ext" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
     <title>TEHNOMART</title>
 
     <svg style="display: none;">
-        <symbol viewBox="0 0 24 24" id="icon-">
-            <path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z" fill="none" stroke="currentColor"/>
+        <symbol viewBox="0 0 17 17" id="icon-search">
+            <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 14 16" id="icon-bookmark">
+            <path d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 15 15" id="icon-cart">
+            <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" fill="currentColor"/>
+            <circle cx="4.5" cy="13.5" r="1.5" fill="currentColor"/>
+            <circle cx="12.5" cy="13.5" r="1.5" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 20 17" id="icon-phone">
+            <path d="M15.572 18.985h-.941c-4.129-.488-7.157-2.408-9.359-4.864C3.062 11.66 1.318 8.492.978 4.228V3.084c.078-.774.459-1.304.898-1.757C2.425.766 3.25.044 4.002.019c.554-.018 1.5.38 1.879.899.329.446.504 1.339.656 2.003.154.671.505 1.643.408 2.289-.148 1.007-1.487 1.434-1.879 2.166 1.307 3.135 3.443 5.439 6.293 7.031.715-.392 1.346-1.572 2.332-1.595.359-.009.818.178 1.184.286.402.121.75.275 1.104.408.596.224 1.648.521 2.004 1.021.365.513.57 1.356.49 1.879-.164 1.041-1.879 2.197-2.901 2.579z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 20 17" id="icon-login">
+            <path d="M14.875 8.5L6 0v6H0v5h6v6z" fill="currentColor"/>
+            <path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 44 65" id="icon-1">
+            <g fill="currentColor">
+                <path d="M37.91 30.438v10.869s.105 2.735-2.825 2.735c-3.069 0-3.125-2.735-3.125-2.735v-6.416c0-.24-.336-1.909-2.319-1.909-2.625 0-2.67 1.877-2.67 1.877V54.08s.029 1.863-2.464 1.863C22 55.943 22 53.96 22 53.96V40.016s0-2.945-3.805-2.945c-4.054 0-3.967 3.125-3.967 3.125v3.728s-.121 2.945-4.688 2.945-4.628-4.509-4.628-4.509V29.938C3.168 28.976 0 26.671 0 26.671v29.332S2.988 65 22 65s22-8.695 22-8.695V26.671c-2.938 2.829-6.09 3.767-6.09 3.767z"/>
+                <path d="M22 0C1.688 0 0 19.875 0 19.875v3.062C8.438 29.188 22 29 22 29s13.562.188 22-6.062v-3.062C44 19.875 42.312 0 22 0zm0 25c-11.75 0-14.312-2.375-14.312-2.375C13.938 19.75 22 19.875 22 19.875s8.062-.125 14.312 2.75c0 0-2.562 2.375-14.312 2.375zm0-12.375c-9.562 0-17.688 2.938-17.688 2.938C8.875 2.625 22 3.062 22 3.062s13.125-.438 17.688 12.5c0 0-8.126-2.937-17.688-2.937z"/>
+            </g>
+        </symbol>
+        <symbol viewBox="0 0 76 51" id="icon-2">
+            <path d="M5.039 58.949S5.039 61 6.907 61h27.02s2.001-.184 2.001-1.984V47.942H5.039v11.007zM73.875 8.016H60.387c-.621-2.287-2.071-3.891-3.762-3.891h-7.542v12.75h7.542c1.69 0 3.141-1.604 3.762-3.891h13.488c.575 0 1.042-1.112 1.042-2.484s-.467-2.484-1.042-2.484zM2.103 0C.167 0 0 2.041 0 2.041v15.812c0 2.936 2.903 3.002 2.903 3.002h9.007c1.935 0 1.601 1.334 1.601 1.334s-2.469 13.01-2.735 15.211c-.267 2.203-1.868 3.604-1.868 3.604s-2.135 1.201-3.002 1.668-.867 2.201-.867 2.201h30.889v-.734c0-1.467-6.472-3.135-9.073-3.402-2.602-.266-2.068-2.002-2.068-2.002l1.067-7.805h3.002l1.134-7.873h-3.002l.331-2.737 8.609-.131c5.805-.601 10.008-4.07 10.008-4.07V4.109C41.333.84 33.993 0 33.993 0H2.103zM36 4.938v.031c0 .55-.45 1-1 1H5.031c-.55 0-1-.45-1-1v-.031c0-.55.45-1 1-1H35c.55 0 1 .45 1 1z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 78 62" id="icon-3">
+            <g fill="currentColor">
+                <path d="M16.125 29.749C7.22 29.749 0 36.968 0 45.875 0 54.78 7.22 62 16.125 62S32.25 54.78 32.25 45.875c.001-8.907-7.219-16.126-16.125-16.126zm0 23.433a7.306 7.306 0 0 1-7.307-7.307 7.307 7.307 0 1 1 14.614 0 7.306 7.306 0 0 1-7.307 7.307zM60.854 45.874a8.062 8.062 0 0 0-8.062 8.062 8.062 8.062 0 1 0 16.124 0 8.06 8.06 0 0 0-8.062-8.062zm0 13.126a5.063 5.063 0 1 1 .002-10.126A5.063 5.063 0 0 1 60.854 59z"/>
+                <path d="M77.898 49.727s-2.023-15.102-2.461-18.414c-.547-4.141-3.625-4.688-3.625-4.688L66 25.946V14h-3v5.833h-4v5.295L47.188 23.75S37.438 3.688 36.626 1.875 33.5 0 33.5 0 11.125 2.375 8.75 3 5.312 6.167 5.312 6.167c-2.308 6.37-2.311 17.296-2.266 20.255a23.328 23.328 0 0 1 13.079-3.986c12.944 0 23.438 10.493 23.438 23.439 0 2.438-.373 4.789-1.064 7h10.164c.39-6.402 5.69-11.479 12.191-11.479s11.802 5.077 12.191 11.479H75c3.641 0 2.898-3.148 2.898-3.148zM23.083 19.833h-6.958V6.167h6.958v13.666zm10 0h-6.958V6.167h6.958v13.666zM53.016 36H49v-7h4.016v7zm7 0H56v-7h4.016v7zm7 0H63v-7h4.016v7z"/>
+            </g>
+        </symbol>
+        <symbol viewBox="0 0 59 72" id="icon-4">
+            <g fill="currentColor">
+                <path d="M58.34 20.545a2.997 2.997 0 0 0-2.396-1.195h-38.67l-2.475-7.385H3.058a3 3 0 1 0 0 6h7.424l13.5 40.285h25.159a3 3 0 1 0 0-6H28.299l-1.726-5.149h23.12a3.001 3.001 0 0 0 2.884-2.172l6.25-21.75a3.005 3.005 0 0 0-.487-2.634zm-7.781 9.681h-4.81V25.35h6.211l-1.401 4.876zm-17.617 0V25.35h6.807v4.875h-6.807zm6.807 6v4.875h-6.807v-4.875h6.807zM26.942 25.35v4.875h-6.023l-1.634-4.875h7.657zm-4.013 10.876h4.013v4.875h-2.379l-1.634-4.875zm22.82 4.875v-4.875h3.086l-1.401 4.875h-1.685z"/>
+                <circle cx="27.406" cy="66.094" r="5.781"/>
+                <circle cx="44.844" cy="66.094" r="5.781"/>
+                <path d="M29.335 9.699l7.547 5.492a1.986 1.986 0 0 0 2.818-.494c.646-.936.43-2.232-.48-2.895l-2.373-1.726 9.436-5.09L50.911 17h4.347L49.214 1.309A2.051 2.051 0 0 0 48.037.126a1.97 1.97 0 0 0-1.643.109L33.146 7.382l-3.022-2.199a1.986 1.986 0 0 0-2.742.39l-8.481 10.798a2.176 2.176 0 0 0-.405.628h5.106l5.733-7.3z"/>
+            </g>
+        </symbol>
+        <symbol viewBox="0 0 78 63" id="icon-5">
+            <g fill="currentColor">
+                <circle cx="25.983" cy="55.5" r="7.5"/>
+                <circle cx="59.982" cy="55.5" r="7.5"/>
+                <path d="M64 0H11.062c-3.188 0-3 3.125-3 3.125V8H3.469a3.469 3.469 0 1 0 0 6.938l28.085 1.84.196.043c-.761 3.197-8.938 3.805-8.938 3.805l-8.31.428H5.446a3.375 3.375 0 1 0 0 6.75l23.656 1.254c-.807 3.153-6.29 3.756-6.29 3.756l-14.751.76v15.615c0 3.188 2.564 3.812 2.564 3.812h2.099c1.173-6.261 6.659-11 13.259-11s12.085 4.739 13.259 11h7.404c1.174-6.261 6.66-11 13.26-11 6.601 0 12.086 4.739 13.26 11h1.709C77.812 53 78 48.938 78 48.938v-15.25C78 14.812 64 0 64 0zM52 23.938v-15h10.062l5.75 15H52z"/>
+            </g>
+        </symbol>
+        <symbol viewBox="0 0 22 40" id="icon-left">
+            <path d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 22 40" id="icon-right">
+            <path d="M19.83-.035l2.089 2.099L4.13 19.947l17.847 17.939-2.09 2.099L-.048 19.947z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 27 16" id="icon-vk">
+            <path d="M16.138 11.5108C17.094 11.2018 18.318 13.5508 19.621 14.4498C20.599 15.1308 21.348 14.9838 21.348 14.9838L24.821 14.9338C24.821 14.9338 26.636 14.8218 25.778 13.3798C25.707 13.2598 25.275 12.3108 23.193 10.3578C21.016 8.31477 21.311 8.64577 23.932 5.11377C25.529 2.96077 26.168 1.64577 25.968 1.08577C25.776 0.54677 24.603 0.68677 24.603 0.68677L20.69 0.71377C20.309 0.71477 19.986 0.83277 19.839 1.22877C19.836 1.23277 19.218 2.89477 18.394 4.30777C16.653 7.29677 15.958 7.45577 15.67 7.26877C15.009 6.83577 15.176 5.53177 15.176 4.60477C15.176 1.70777 15.608 0.49977 14.33 0.18777C13.903 0.0837698 13.591 0.0157698 12.502 0.00576984C11.11 -0.0152302 9.92797 0.00576984 9.25797 0.33477C8.81297 0.55777 8.47197 1.04677 8.67897 1.07477C8.93897 1.10977 9.52197 1.23477 9.83397 1.66077C10.235 2.21277 10.223 3.44977 10.223 3.44977C10.223 3.44977 10.452 6.86077 9.68297 7.28377C9.15497 7.57377 8.43297 6.98177 6.87997 4.26777C6.08697 2.87977 5.48797 1.34577 5.48797 1.34577C5.48797 1.34577 5.37197 1.06077 5.16197 0.90477C4.91197 0.71977 4.56197 0.66077 4.56197 0.66077L0.84797 0.68477C0.84797 0.68477 0.28997 0.70077 0.0849697 0.94677C-0.0970303 1.16477 0.0699697 1.61477 0.0699697 1.61477C0.0699697 1.61477 2.97897 8.49577 6.27297 11.9618C9.29297 15.1438 12.725 14.9328 12.725 14.9328L14.28 14.9328C14.28 14.9328 14.749 14.8788 14.989 14.6208C15.213 14.3808 15.203 13.9298 15.203 13.9298C15.203 13.9298 15.172 11.8208 16.138 11.5108Z" transform="translate(3.030166E-05 0.9992301)" fill="currentColor" stroke="none" />
+        </symbol>
+        <symbol viewBox="0 0 12 22" id="icon-facebook">
+            <path d="M12 4L12 0L8 0C5.79086 -1.35271e-16 4 1.79086 4 4L4 8L0 8L0 12L4 12L4 22L8 22L8 12L12 12L12 8L8 8L8 4L12 4Z" fill="currentColor" stroke="none" />
+        </symbol>
+        <symbol viewBox="0 0 21 21" id="icon-instagramm">
+            <path d="M18 0L3 0C1.35 0 0 1.35 0 3L0 18C0 19.65 1.35 21 3 21L18 21C19.65 21 21 19.65 21 18L21 3C21 1.35 19.65 0 18 0ZM14 7L18 7L18 3L14 3L14 7ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18L3 9L4.181 9C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9L18 9L18 18L3 18Z" fill="currentColor" fill-rule="evenodd" stroke="none" />
+        </symbol>
+        <symbol viewBox="0 0 21 21" id="icon-form2">
+            <path d="M13.273 10.5l7.422-7.422a1.003 1.003 0 0 0 0-1.414L19.336.305a1.003 1.003 0 0 0-1.414 0L10.5 7.727 3.078.305a1.003 1.003 0 0 0-1.414 0L.305 1.664a1.003 1.003 0 0 0 0 1.414L7.727 10.5.306 17.922a1.003 1.003 0 0 0 0 1.414l1.359 1.359a1.003 1.003 0 0 0 1.414 0l7.422-7.422 7.422 7.422a1.003 1.003 0 0 0 1.414 0l1.359-1.359a1.003 1.003 0 0 0 0-1.414L13.273 10.5z" fill="#EE3643"/>
         </symbol>
     </svg>
 </head>
 
 <body>
-<div class="maket">
+<!--<div class="maket">-->
+    <img class="maket__pos maket__pos--desktop" src="images/technomart-index.jpg" alt="">
+<!--</div>-->
 
-</div>
-    <div class="cont">
-        <h1>12312</h1>
+<!--   1   -->
+
+<header class="header header--bg">
+    <div class="header__warp">
+        <div class="header__block">
+            <div class="header__logo logo header__logo--indent">
+                <img class="logo__pic" src="images/logo.png" alt="">
+                <div class="logo__shadow"></div>
+            </div>
+            <div class="header__element">
+                <div class="header__icon header__icon--indent">
+                    <svg class="svg">
+                        <use xlink:href="#icon-search"></use>
+                </svg>
+            </div>
+                <div class="header__text">Поиск:</div>
+            </div>
+        </div>
+        <div class="header__block header__block--indent">
+            <div class="header__element">
+                <div class="header__icon header__icon--indent">
+                    <svg class="svg">
+                        <use xlink:href="#icon-bookmark"></use>
+                    </svg>
+                </div>
+                <div class="header__text">Закладки: 0</div>
+            </div>
+            <div class="header__element">
+                <div class="header__icon header__icon--indent">
+                    <svg class="svg">
+                        <use xlink:href="#icon-cart"></use>
+                    </svg>
+                </div>
+                <div class="header__text">Корзина: 0</div>
+            </div>
+            <div class="header__button button button--green">Оформить заказ</div>
+        </div>
     </div>
+</header>
+
+<!--   2   -->
+<section class="main-sect main-sect--bg">
+    <div class="main-sect__warp main-sect__warp--indent">
+        <div class="main-sect__content main-sect__content--indent">
+            <div class="main-sect__label main-sect__label--indent">Интернет-магазин<br>
+                строительных материалов<br>
+                и инструментов для ремонта</div>
+            <div class="main-sect__input-block">
+                <input class="main-sect__input" type="text" placeholder="+7 (812) 555-05-55">
+                <div class="main-sect__icon">
+                    <svg class="svg">
+                        <use xlink:href="#icon-phone"></use>
+                    </svg>
+                </div>
+                <div class="main-sect__input-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+            </div>
+            <div class="main-sect__buttons">
+                <div class="main-sect__button button button--white button--with-icon">
+                    <div class="button__icon">
+                        <svg class="svg">
+                            <use xlink:href="#icon-login"></use>
+                        </svg>
+                    </div>
+                    Войти
+                </div>
+                <div class="main-sect__button button button--white">Регистрация</div>
+            </div>
+        </div>
+        <div class="main_sect__nav top-nav main_sect__nav--indent">
+            <ul class="top-nav__navbar top-nav__navbar--color">
+                <li class="top-nav__item">Главная</li>
+                <li class="top-nav__item">Компания</li>
+                <li class="top-nav__item">Каталог</li>
+                <li class="top-nav__item">Новости</li>
+                <li class="top-nav__item">Спецпредложения</li>
+                <li class="top-nav__item">Доставка</li>
+                <li class="top-nav__item">Контакты</li>
+            </ul></div>
+    </div>
+</section>
+
+<!--   3   -->
+<section class="products products--indent ">
+    <div class="products__warp">
+        <div class="products__items row">
+            <div class="products__item col-4">
+                <div class="cart cart--color-honey cart--indent new">
+                    <div class="cart__name cart__name--indent">Материалы</div>
+                    <div class="cart__button button button--black button--radius ">на любой вкус</div>
+                    <div class="cart__icon">
+                        <svg class="svg">
+                            <use xlink:href="#icon-1"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="products__item col-4">
+                <div class="cart cart--color-sky cart--indent">
+                    <div class="cart__name cart__name--indent">Инструмент</div>
+                    <div class="cart__button button button--black button--radius ">НА ВСЕ СЛУЧАИ</div>
+                    <div class="cart__icon">
+                        <svg class="svg">
+                            <use xlink:href="#icon-2"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="products__item col-4">
+                <div class="cart cart--color-purple cart--indent">
+                    <div class="cart__name cart__name--indent">Техника</div>
+                    <div class="cart__button button button--black button--radius ">для стройки</div>
+                    <div class="cart__icon">
+                        <svg class="svg">
+                            <use xlink:href="#icon-3"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="products__items row">
+            <div class="products__item col-8">
+                <div class="cart cart--x2">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img class="cart__image" src="images/layer99.png" alt="">
+                                <div class="cart__add">
+                                    <div class="cart__bigger cart__bigger--indent">Дрели</div>
+                                    <div class="cart__label cart__label--indent">Соседям на радость!</div>
+                                    <div class="cart__button button button--red button--radius cart__button--big">ОТКРЫТЬ КАТАЛОГ</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="products__item col-4">
+                <div class="cart cart--color-olive cart--indent">
+                    <div class="cart__name cart__name--indent">Скидки 50%</div>
+                    <div class="cart__button button button--black button--radius ">На 350 ТОВАРОВ</div>
+                    <div class="cart__icon">
+                        <svg class="svg">
+                            <use xlink:href="#icon-4"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="cart cart--color-honey cart--indent cart--tops">
+                    <div class="cart__name cart__name--indent">Доставка</div>
+                    <div class="cart__button button button--black button--radius ">бесплатно</div>
+                    <div class="cart__icon">
+                        <svg class="svg">
+                            <use xlink:href="#icon-5"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--   4   -->
+
+<section class="popular popular--indent">
+    <div class="popular__warp">
+        <div class="popular__wrapper popular__wrapper--color popular__wrapper--indent">
+            <h2 class="h2 popular__title">Популярные товары:</h2>
+            <div class="popular__button button button--red">все поПулярные товары</div>
+        </div>
+        <div class="popular__items popular__items--indent">
+            <div class="popular__item popular__item--indent">
+                <div class="popular__elements popular__elements--indent">
+                    <img class="popular__image popular__image--indent" src="images/perforator_1.png" alt="">
+                    <div class="popular__isp popular__isp--indent">Перфоратор BOSCH BFG 9000</div>
+                    <div class="popular__old-price popular__old-price--indent">32500 Р.</div>
+                    <div class="popular__price popular__price--indent">25500 Р.</div>
+                </div>
+            </div>
+            <div class="popular__item popular__item--indent">
+                <div class="popular__elements popular__elements--indent">
+                    <img class="popular__image popular__image--indent" src="images/perforator_2.png" alt="">
+                    <div class="popular__isp popular__isp--indent">Перфоратор BOSCH BFG 9000</div>
+                    <div class="popular__old-price popular__old-price--indent">22500 Р.</div>
+                    <div class="popular__price popular__price--indent">15500 Р.</div>
+                </div>
+            </div>
+            <div class="popular__item popular__item--indent">
+                <div class="popular__elements popular__elements--indent">
+                    <img class="popular__image popular__image--indent" src="images/perforator_3.png" alt="">
+                    <div class="popular__isp popular__isp--indent">Перфоратор BOSCH BFG 6000</div>
+                    <div class="popular__old-price popular__old-price--indent">32500 Р.</div>
+                    <div class="popular__price popular__price--indent">25500 Р.</div>
+                </div>
+            </div>
+            <div class="popular__item popular__item--indent">
+                <div class="popular__elements popular__elements--indent new">
+                    <img class="popular__image popular__image--indent" src="images/perforator_4.png" alt="">
+                    <div class="popular__isp popular__isp--indent">Перфоратор BOSCH BFG 2000</div>
+                    <div class="popular__old-price popular__old-price--indent"></div>
+                    <div class="popular__price popular__price--indent">12500 Р.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popular__wrapper popular__wrapper--color popular__wrapper--indent">
+            <h2 class="h2 popular__title">Популярные ПРОИзводители:</h2>
+            <div class="popular__button button button--red">все производители</div>
+        </div>
+        <div class="popular__items popular__items--indent">
+            <div class="popular__item popular__item--indent">
+                <div class="popular__elements popular__elements--manuf popular__elements--indent">
+                    <img class="popular__manuf" src="images/1-bosch.png" alt="">
+                </div>
+            </div>
+            <div class="popular__item popular__item--indent">
+                <div class="popular__elements popular__elements--manuf popular__elements--indent">
+                    <img class="popular__manuf" src="images/2-Makita.png" alt="">
+                </div>
+            </div>
+            <div class="popular__item popular__item--indent">
+                <div class="popular__elements popular__elements--manuf popular__elements--indent">
+                    <img class="popular__manuf" src="images/3-DeWALT.png" alt="">
+                </div>
+            </div>
+            <div class="popular__item popular__item--indent">
+                <div class="popular__elements popular__elements--manuf popular__elements--indent">
+                    <img class="popular__manuf" src="images/4-Интерскол.png" alt="">
+                </div>
+            </div>
+            <div class="popular__item popular__item--indent">
+                <div class="popular__elements popular__elements--manuf popular__elements--indent">
+                    <img class="popular__manuf" src="images/5-Hitachi.png" alt="">
+                </div>
+            </div>
+            <div class="popular__item popular__item--indent">
+                <div class="popular__elements popular__elements--manuf popular__elements--indent">
+                    <img class="popular__manuf" src="images/6-LG.png" alt="">
+                </div>
+            </div>
+            <div class="popular__item popular__item--indent">
+                <div class="popular__elements popular__elements--manuf popular__elements--indent">
+                    <img class="popular__manuf" src="images/7-AEG.png" alt="">
+                </div>
+            </div>
+            <div class="popular__item popular__item--indent">
+                <div class="popular__elements popular__elements--manuf popular__elements--indent">
+                    <img class="popular__manuf" src="images/8-Metabo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--   5   -->
+
+<section class="service service--bg service service--indent">
+    <div class="service__warp service__warp--indent">
+        <h2 class="h2 service__title service__title--indent">Сервисы</h2>
+        <div class="service__description service__description--indent">Хороший интернет-магазин отличается от плохого не только ценами!<br>
+            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</div>
+        <div class="service__content">
+            <div class="service__specifics service__specifics--indent">
+                <div class="service__specific active">Доставка</div>
+                <div class="service__specific">Гарантия</div>
+                <div class="service__specific">Кредит</div>
+            </div>
+            <div class="service__item service__item--indent">
+                <div class="service__text service__text--indent">
+                    <div class="service__name service__name--indent">Доставка</div>
+                    <div class="service__declaration">Мы с удовольствием доставим ваш товар прямо
+                        к вашему подъезду совершенно бесплатно!
+                        Ведь мы неплохо заработаем,
+                        поднимая его на ваш этаж!</div>
+                </div>
+                <img class="service__img" src="images/s-delivery.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--   6   -->
+
+<section class="company company--bg company--indent">
+    <div class="company__warp company__warp--indent">
+        <div class="company__content">
+            <div class="company__about">
+                <h2 class="h2 company__title company__title--indent">КОМПАНИЯ «Техномарт»</h2>
+                <div class="company__text company__text--indent">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+                    <br><br>
+                    Мы можем доставить ваш товар в самые отдаленные точки России!
+                    Техномарт работает со многими транспортными компаниями:
+                </div>
+                <ul class="company__list company__list--indent">
+                    <li class="company__item">Деловые линии</li>
+                    <li class="company__item">Автотрейдинг</li>
+                    <li class="company__item">ЖелДорЭкспедиция</li>
+                </ul>
+                <div class="company__button button button--red">Подробнее о компании</div>
+            </div>
+            <div class="company__contacts">
+                <h2 class="h2 company__title company__title--indent">КОНТАКТЫ</h2>
+                <div class="company__text company__text--indent">Вы можете забрать товар сами,<br>
+                    заехав в наш офис:
+                </div>
+                <img class="company__map company__map--indent" src="images/map.png" alt="">
+                <div class="company__button button button--red js-button">Заблудились? НапиШИТЕ НАМ!</div>
+            </div>
+        </div>
+    </div>
+    <div class="write-us js-action active">
+        <div class="write-us__close js-close">
+            <svg class="svg">
+                <use xlink:href="#icon-form2"></use>
+            </svg>
+        </div>
+        <form action="" class="write-us__form write-us__form--indent">
+            <div class="write-us__content write-us__content--indent">
+                <label class="write-us__label" for="name-form">Ваше имя:</label>
+                <input class="write-us__input" id="name-form" type="text" placeholder="Имя Фамилия">
+            </div>
+            <div class="write-us__content">
+                <label class="write-us__label" for="male-form">Ваш e-mail:</label>
+                <input class="write-us__input" id="male-form" type="text" placeholder="email@example.com">
+            </div>
+            <label class="write-us__label" for="male-form">Ваш e-mail:</label>
+<!--            <div class="write-us__area">            </div>-->
+            <textarea class="write-us__textarea write-us__textarea--indent" id="message-form"></textarea>
+            <div class="write-us__button button button--red write-us__button--indent js-button">ОТПРАВИТЬ</div>
+        </form>
+    </div>
+</section>
+
+<!--   7   -->
+
+<section class="cellar cellar--bg cellar--indent">
+    <div class="cellar__warp">
+        <div class="cellar__wrapper">
+            <div class="cellar__logo logo cellar__logo--indent">
+                <img class="logo__pic" src="images/logo-footer.png" alt="">
+                <div class="logo__shadow"></div>
+            </div>
+            <div class="cellar__text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</div>
+        </div>
+        <ul class="cellar__nav">
+            <li class="cellar__item">Компания</li>
+            <li class="cellar__item">Новости</li>
+            <li class="cellar__item">Каталог</li>
+            <li class="cellar__item">Доставка</li>
+            <li class="cellar__item">Контакты</li>
+            <li class="cellar__item">Материалы</li>
+            <li class="cellar__item">Техника</li>
+            <li class="cellar__item">Инструмент</li>
+            <li class="cellar__item">Спецпредложения</li>
+        </ul>
+    </div>
+</section>
+
+<!--   8   -->
+
+<footer class="footer footer--bg footer--indent">
+    <div class="footer__warp">
+        <div class="footer__copyright">© 2010–2019 Компания «Техномарт»<br>Все права защищены</div>
+        <div class="footer__social social">
+            <a href="#" class="social__item social__item--indent social__item--dark">
+                <svg class="svg">
+                    <use xlink:href="#icon-vk"></use>
+                </svg>
+            </a>
+            <a href="#" class="social__item social__item--indent social__item--dark">
+                <svg class="svg">
+                    <use xlink:href="#icon-facebook"></use>
+                </svg>
+            </a>
+            <a href="#" class="social__item social__item--indent social__item--dark">
+                <svg class="svg">
+                    <use xlink:href="#icon-instagramm"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="footer__shapes">
+            <div class="footer__item">
+                Обратная связь:
+                <a href="#" class="footer__link">
+                    Email@Email.com
+                </a>
+            </div>
+            <div class="footer__item">
+                Разработано —<br>
+                <a href="#" class="footer__link">
+                    HTML-M
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper1 = new Swiper('.swiper-containe1r', {
+        loop: true,
+        speed: 500,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            bulletClass: 'cart__rectangle',
+            bulletActiveClass: 'active',
+            bulletElement: 'div',
+            clickable:  true,
+
+        },
+        // Navigation arrows
+        navigation: {
+            prevEl: '.cart__left',
+            nextEl: '.cart__right',
+        },
+
+        /*        autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                }*/
+    });
+</script>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+</script>
+<script src="js/action.js"></script>
+
 </body>
 </html>

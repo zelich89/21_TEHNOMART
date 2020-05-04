@@ -1,9 +1,26 @@
 //@import "bs/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "site/mixins";
 
 @import "site/variables";
 @import "site/_types";
 @import "site/body";
 
 @import "site/maket";
+@import "site/extended";
+@import "site/logo";
+@import "site/button";
+@import "site/top-nav";
+@import "site/cart";
+@import "site/social";
+@import "site/write-us";
 
 @import "site/style";
+@import "site/header";
+@import "site/main-sect";
+@import "site/products";
+@import "site/popular";
+@import "site/service";
+@import "site/company";
+@import "site/cellar";
+@import "site/footer";
