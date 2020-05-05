@@ -1,7 +1,7 @@
 .cart {
   position: relative;
   height: 123px;
-  //background-color: greenyellow;
+  background-color: #ccc;
   &__name {
 
     @include font(bold, 24px, 30px);
@@ -26,10 +26,27 @@
   &__add {
     position: absolute;
     top: 20px;
-    right: 0;
+    right: 10px;
     bottom: 0;
     left: 20px;
     //background-color: rgba(blue, .3);
+  }
+  &__arrows {
+    position: absolute;
+    color: white;
+    top: 50%;
+    right: 10px;
+    left: 20px;
+  }
+  &__left {
+    position: absolute;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  &__right {
+    position: absolute;
+    right: 0;
+    transform: translateY(-50%);
   }
   &__bigger {
     @include font(bold, 36px, 1);
@@ -66,6 +83,9 @@
   }
   .svg {
     @include square-size(80px);
+    &--small {
+        @include square-size(40px);
+    }
   }
   //Colors
   &--color-honey {

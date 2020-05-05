@@ -9,3 +9,7 @@ $(".js-close").click(function() {
 });
 
 
+$(".service__content .service__specific").click(function() {
+    $(".service__content .service__specific").removeClass("active").eq($(this).index()).addClass("active");
+    $(".service__item").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("active");

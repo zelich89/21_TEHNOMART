@@ -65,10 +65,10 @@
             </g>
         </symbol>
         <symbol viewBox="0 0 22 40" id="icon-left">
-            <path d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z" fill="currentColor"/>
+            <path d="M19.83-.035l2.089 2.099L4.13 19.947l17.847 17.939-2.09 2.099L-.048 19.947z" fill="currentColor"/>
         </symbol>
         <symbol viewBox="0 0 22 40" id="icon-right">
-            <path d="M19.83-.035l2.089 2.099L4.13 19.947l17.847 17.939-2.09 2.099L-.048 19.947z" fill="currentColor"/>
+            <path d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z" fill="currentColor"/>
         </symbol>
         <symbol viewBox="0 0 27 16" id="icon-vk">
             <path d="M16.138 11.5108C17.094 11.2018 18.318 13.5508 19.621 14.4498C20.599 15.1308 21.348 14.9838 21.348 14.9838L24.821 14.9338C24.821 14.9338 26.636 14.8218 25.778 13.3798C25.707 13.2598 25.275 12.3108 23.193 10.3578C21.016 8.31477 21.311 8.64577 23.932 5.11377C25.529 2.96077 26.168 1.64577 25.968 1.08577C25.776 0.54677 24.603 0.68677 24.603 0.68677L20.69 0.71377C20.309 0.71477 19.986 0.83277 19.839 1.22877C19.836 1.23277 19.218 2.89477 18.394 4.30777C16.653 7.29677 15.958 7.45577 15.67 7.26877C15.009 6.83577 15.176 5.53177 15.176 4.60477C15.176 1.70777 15.608 0.49977 14.33 0.18777C13.903 0.0837698 13.591 0.0157698 12.502 0.00576984C11.11 -0.0152302 9.92797 0.00576984 9.25797 0.33477C8.81297 0.55777 8.47197 1.04677 8.67897 1.07477C8.93897 1.10977 9.52197 1.23477 9.83397 1.66077C10.235 2.21277 10.223 3.44977 10.223 3.44977C10.223 3.44977 10.452 6.86077 9.68297 7.28377C9.15497 7.57377 8.43297 6.98177 6.87997 4.26777C6.08697 2.87977 5.48797 1.34577 5.48797 1.34577C5.48797 1.34577 5.37197 1.06077 5.16197 0.90477C4.91197 0.71977 4.56197 0.66077 4.56197 0.66077L0.84797 0.68477C0.84797 0.68477 0.28997 0.70077 0.0849697 0.94677C-0.0970303 1.16477 0.0699697 1.61477 0.0699697 1.61477C0.0699697 1.61477 2.97897 8.49577 6.27297 11.9618C9.29297 15.1438 12.725 14.9328 12.725 14.9328L14.28 14.9328C14.28 14.9328 14.749 14.8788 14.989 14.6208C15.213 14.3808 15.203 13.9298 15.203 13.9298C15.203 13.9298 15.172 11.8208 16.138 11.5108Z" transform="translate(3.030166E-05 0.9992301)" fill="currentColor" stroke="none" />
@@ -221,6 +221,18 @@
                                     <div class="cart__label cart__label--indent">Соседям на радость!</div>
                                     <div class="cart__button button button--red button--radius cart__button--big">ОТКРЫТЬ КАТАЛОГ</div>
                                 </div>
+                                <div class="cart__arrows">
+                                    <div class="cart__left">
+                                        <svg class="svg svg--small">
+                                            <use xlink:href="#icon-left"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="cart__right">
+                                        <svg class="svg svg--small">
+                                            <use xlink:href="#icon-right"></use>
+                                        </svg>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -355,15 +367,34 @@
                 <div class="service__specific">Гарантия</div>
                 <div class="service__specific">Кредит</div>
             </div>
-            <div class="service__item service__item--indent">
-                <div class="service__text service__text--indent">
-                    <div class="service__name service__name--indent">Доставка</div>
-                    <div class="service__declaration">Мы с удовольствием доставим ваш товар прямо
-                        к вашему подъезду совершенно бесплатно!
-                        Ведь мы неплохо заработаем,
-                        поднимая его на ваш этаж!</div>
+            <div class="service__items">
+                <div class="service__item service__item--indent">
+                    <div class="service__text service__text--indent">
+                        <div class="service__name service__name--indent">Доставка</div>
+                        <div class="service__declaration">Мы с удовольствием доставим ваш товар прямо
+                            к вашему подъезду совершенно бесплатно!
+                            Ведь мы неплохо заработаем,
+                            поднимая его на ваш этаж!</div>
+                    </div>
+                    <img class="service__img" src="images/s-delivery.png" alt="">
                 </div>
-                <img class="service__img" src="images/s-delivery.png" alt="">
+                <div class="service__item service__item--indent">
+                    <div class="service__text service__text--indent">
+                        <div class="service__name service__name--indent">Гарантия</div>
+                        <div class="service__declaration">Если купленный у нас товар поломается или заискрит,<br>
+                            а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
+                            Дом уж восстановите как-нибудь сами.</div>
+                    </div>
+                    <img class="service__img" src="images/s-guarantee.png" alt="">
+                </div>
+                <div class="service__item active service__item--indent">
+                    <div class="service__text service__text--indent">
+                        <div class="service__name service__name--indent">Кредит</div>
+                        <div class="service__declaration">Залезть в долговую яму стало проще!
+                            Кредитные консультанты придут вам на помощь.</div>
+                    </div>
+                    <img class="service__img" src="images/s-credit.png" alt="">
+                </div>
             </div>
         </div>
     </div>
