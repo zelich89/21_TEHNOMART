@@ -1,0 +1,23 @@
+.word {
+  &__warp {
+    @extend .warps;
+  }
+  &__title {
+    text-transform: uppercase;
+    &--indent {
+      //padding-top: 75px;
+      padding-bottom: 25px;
+    }
+  }
+  &__description {
+    font-family: 'PT Sans', sans-serif;
+    @include font(normal, 13px, 24px);
+
+  }
+  &--bg {
+    background-color: #f3f7f8;
+  }
+  &--indent {
+    padding: 65px;
+  }
+}

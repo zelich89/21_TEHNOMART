@@ -1,0 +1,38 @@
+.techno-checkbox {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  &__input {
+  }
+  &__uncheck {
+    width: 30px;
+    color: #c5c5c5;
+    .svg {
+      @include square-size(23px);
+    }
+  }
+  &__check {
+    width: 30px;
+    color: #c5c5c5;
+    display: none;
+    .svg {
+      width: 27px;
+      height: 23px;
+    }
+  }
+  &__input:checked ~ .techno-checkbox__uncheck {
+    display: none;
+  }
+  &__input:checked ~ .techno-checkbox__check {
+    display: block;
+  }
+  &__text {
+    font-family: 'PT Sans', sans-serif;
+    @include font(normal, 15px, 19px);
+    text-transform: uppercase;
+  }
+  &--indent {
+    margin-bottom: 17px;
+  }
+}

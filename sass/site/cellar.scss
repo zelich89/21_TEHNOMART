@@ -2,6 +2,10 @@
   &__warp {
     @extend .warps;
     display: flex;
+    &--indent {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
   }
   &__wrapper {
     width: 40%

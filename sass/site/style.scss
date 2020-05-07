@@ -1,4 +1,31 @@
-.content {
-  width: 900px;
-  margin: 0 auto;
+.zel {
+  position: relative;
+  &:after {
+    position: absolute;
+    content: '';
+    top: 75%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.1);
+
+  }
+  &--height {
+    height: 500px;
+  }
+}
+
+
+.dot {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: darkgreen;
+  transition: background 2s ease;
+  &:first-child{
+    margin-bottom: 30px;
+  }
+  &:hover {
+    background-color: darkblue;
+  }
 }

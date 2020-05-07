@@ -1,0 +1,72 @@
+.filter {
+  &__name {
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-family: 'PT Sans', sans-serif;
+    @include font(normal, 13px, 18px);
+    border-radius: 3px;
+    &--color {
+      background-color: $catalog-primary;
+    }
+    &--indent {
+      margin-bottom: 20px;
+    }
+  }
+  &__title {
+    font-family: 'PT Sans', sans-serif;
+    @include font(bold, 17px, 30px);
+    text-transform: uppercase;
+    &--indent {
+      margin-bottom: 20px;
+    }
+  }
+  &__box {
+
+    &--indent {
+      margin-bottom: 50px;
+    }
+  }
+  &__scroll {
+    display: block;
+    height: 80px;
+    background-color: $catalog-primary;
+    border-radius: 3px;
+    &--indent {
+      margin-bottom: 10px;
+    }
+  }
+  &__nums {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'PT Sans', sans-serif;
+    @include font(normal, 17px, 18px);
+    &--indent {
+      margin-bottom: 25px;
+    }
+  }
+  &__num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    width: 45%;
+    background-color: $catalog-primary;
+    border-radius: 3px;
+  }
+  &__symbol {
+    padding: 10px;
+  }
+  &__border {
+    display: block;
+    height: 1px;
+    background-color: $catalog-primary;
+    &--indent {
+      margin-bottom: 25px;
+    }
+  }
+  &__button {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}

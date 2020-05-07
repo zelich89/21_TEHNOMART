@@ -13,7 +13,9 @@
     text-transform: uppercase;
     @include font(normal, 14px, 18px);
     text-align: center;
-    &--big {
+    &--slider {
+      position: absolute;
+      top: 70%;
       width: 200px;
     }
   }
@@ -35,8 +37,8 @@
     position: absolute;
     color: white;
     top: 50%;
-    right: 10px;
-    left: 20px;
+    right: 0;
+    left: 0;
   }
   &__left {
     position: absolute;
@@ -47,6 +49,31 @@
     position: absolute;
     right: 0;
     transform: translateY(-50%);
+  }
+  &__pagination {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateY(-50%);
+    display: flex;
+  }
+  &__dot {
+    position: relative;
+    cursor: pointer;
+    @include square-size($dot-size);
+    border-radius: 50%;
+    margin-right: $dot-size;
+    background-color: white;
+    &.active:after {
+      content: '';
+      position: absolute;
+      @include square-size($dot-size/10*6);\-webkit-border-radius: 50px;
+      border-radius: 50%;
+      background-color: red;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
   &__bigger {
     @include font(bold, 36px, 1);
