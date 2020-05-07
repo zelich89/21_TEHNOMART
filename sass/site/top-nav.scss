@@ -15,4 +15,12 @@
     white-space: nowrap;
     padding: 20px 30px 25px 20px;
   }
+  &__link {
+    color: white;
+    transition: opacity $transition-time ease;
+    &:hover {
+      opacity: .75;
+      color: currentColor;
+    }
+  }
 }
