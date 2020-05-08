@@ -11,7 +11,7 @@
     }
     &--indent {
       padding: 15px 20px 10px;
-      margin: 0 10px;
+      margin: 0 10px 32px;
     }
   }
   &__title {
@@ -27,15 +27,20 @@
     display: flex;
     flex-wrap: wrap;
     &--indent {
-      margin-bottom: 20px;
+      //margin-bottom: 20px;
     }
   }
   &__item {
     width: 25%;
+    padding-right: 10px;
+    padding-left: 10px;
     &--indent {
-      margin-top: 30px;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
+    &--indent-manuf {
+      margin-bottom: 20px;
+    }
+
   }
   &__elements {
     position: relative;
@@ -45,7 +50,7 @@
     align-items: center;
     justify-content: center;
     &--manuf {
-      height: 130px;
+      height: 150px;
     }
     &--indent {
       margin-right: 10px;

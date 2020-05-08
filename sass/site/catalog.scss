@@ -89,10 +89,9 @@
   &__title {
     text-transform: uppercase;
     color: #32425C;
-
     &--indent {
       padding: 30px;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
     }
 
     &--bg {
@@ -144,6 +143,9 @@
     flex-wrap: wrap;
     margin-right: -10px;
     margin-left: -10px;
+    &--indent {
+      margin-bottom: 20px;
+    }
   }
   &__item {
     width: 33%;

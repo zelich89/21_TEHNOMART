@@ -35,6 +35,14 @@
       color: #ffd180;
     }
   }
+  &__link {
+    color: white;
+    transition: opacity $transition-time ease;
+    &:hover {
+      opacity: .75;
+      color: currentColor;
+    }
+  }
   &--bg {
     background-color: #32425c;
   }
