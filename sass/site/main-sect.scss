@@ -10,13 +10,17 @@
   &__content {
     display: flex;
     justify-content: space-between;
+    margin-right: -10px;
+    margin-left: -10px;
     &--indent {
       padding-top: 45px;
       padding-bottom: 38px;
     }
   }
   &__label {
-    //width: 33%;
+    width: 33%;
+    padding-right: 10px;
+    padding-left: 10px;
     color: $primary;
     @include font(normal, 16px, 23px);
     font-style: italic;
@@ -27,6 +31,8 @@
   &__input-block {
     position: relative;
     width: 33%;
+    padding-right: 10px;
+    padding-left: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -57,10 +63,18 @@
     }
   }
   &__buttons {
-    width: 30%;
+    width: 33%;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: flex-end;
   }
   &__button {
     @include font(normal, 21px, 21px);
+    &:first-child {
+      margin-right: 10px;
+    }
   }
   &__nav {
     border: 5px solid fuchsia;

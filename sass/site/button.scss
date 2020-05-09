@@ -7,18 +7,23 @@
   @include font(normal, 18px, 1);
   color: white;
   &__icon {
-    //position: absolute;
-    //top: 0;
-    //left: 0;
-    //margin-top: 10px;
-    //margin-left: 10px;
     margin-right: 15px;
     .svg {
       @include square-size(20px);
     }
+    &--long {
+      margin-right: 0;
+      margin-left: 40px;
+    }
   }
   &--radius {
     border-radius: 3px;
+  }
+  &--transparent {
+    background-color: transparent;
+    //&:hover {
+    //  color: darken(white, 25%);
+    //}
   }
   &--green {
     background-color: #63a63e;
@@ -38,7 +43,7 @@
       color: #c5c5c5;
     }
   }
-  &--green {
+  &--green-with {
     background-color: #63A63E;
     border: 3px solid #63A63E;
     border-bottom-color: #367315;
@@ -58,5 +63,10 @@
   &--with-icon {
     display: inline-flex;
     //padding-left: 40px;
+  }
+  &--long {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }
