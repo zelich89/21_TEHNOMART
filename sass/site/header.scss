@@ -10,9 +10,7 @@
   &__block {
     width: 50%;
     display: flex;
-    align-items: center;
     &--indent {
-      //padding-left: 20px;
     }
     &:nth-child(2) {
       justify-content: flex-end;

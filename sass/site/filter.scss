@@ -27,12 +27,47 @@
     }
   }
   &__scroll {
+    position: relative;
     display: block;
     height: 80px;
     background-color: $catalog-primary;
     border-radius: 3px;
     &--indent {
       margin-bottom: 10px;
+    }
+  }
+  &__line {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    right: 15%;
+    transform: translateY(-50%);
+    height: 2px;
+    background-color: #00ca74;
+  }
+  &__moved {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    @include square-size(22px);
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 2px 2px 1px rgba(0,0,0,.2);
+    z-index: 2;
+    cursor: pointer;
+    &:before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @include square-size(6px);
+      border-radius: 50%;
+      background-color: #ababab;
+      z-index: 3;
+    }
+    &--end {
+      left: 60%;
     }
   }
   &__nums {

@@ -84,16 +84,36 @@
     display: flex;
     justify-content: center;
     & *:not(:last-child) {
-      margin-right: 10px;
+      //padding-left: 30px;
     }
     &--indent {
       margin-top: 10px;
     }
   }
   &__link {
+    position: relative;
     text-decoration: underline;
     transition: all $transition-time ease;
-    color: black;
+    color: #32425C;
+    font-family: 'Cuprum', sans-serif;
+    @include font(normal, 16px, 18px);
+    &:not(:last-child) {
+      margin-right: 30px;
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: -15px;
+        transform: translate(50%,-50%);
+        @include square-size(6px);
+        border-radius: 50%;
+        background-color: #32425C;
+      }
+    }
+    &:hover {
+      color: currentColor;
+      opacity: .8;
+    }
   }
   &__nav {
     border: 5px solid fuchsia;
