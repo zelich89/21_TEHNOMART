@@ -10,6 +10,9 @@
     background-color: rgba(0,0,0,.1);
 
   }
+  &__temp {
+    font-size: 16px;
+  }
   &--height {
     height: 500px;
   }
@@ -17,14 +20,11 @@
 
 
 .dot {
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background-color: darkgreen;
   transition: background 2s ease;
-  &:first-child{
-    margin-bottom: 30px;
-  }
   &:hover {
     background-color: darkblue;
   }

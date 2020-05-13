@@ -1,7 +1,5 @@
 .catalog {
   &__warp {
-    @extend .warps;
-
     &--indent {
       padding-right: 10px;
       padding-left: 10px;
@@ -20,10 +18,11 @@
   }
 
   &__icon {
+    display: flex;
+    cursor: pointer;
     .svg {
       @include square-size(15px);
     }
-
     &--color {
       .svg {
         color: #c5c5c5;
@@ -34,6 +33,20 @@
   &__nav-link {
     text-transform: uppercase;
     color: #000;
+  }
+  &__nav-link-Z {
+    position: relative;
+    margin-left: 45px;
+    text-transform: uppercase;
+    color: #000;
+    &:before {
+      content: '>';
+      position: absolute;
+      top: 50%;
+      left: -30px;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
   }
 
   &__content {

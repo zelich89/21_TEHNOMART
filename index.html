@@ -2,8 +2,6 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAD///8AQzbuAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEREREREREREREREQARERERERERABEREREREREAEREREREREQARERERERERABEREREREREAEREREREREQARERERERERABEREREREREAEREREREREQARERERERERABERERERAAAAAAAREREAAAAAABEREREREREREREREREREREREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon" />
@@ -125,19 +123,20 @@
 <!--   1   -->
 
 <header class="header header--bg">
-    <div class="header__warp">
+    <div class="header__warp warps container">
         <div class="header__block">
-            <div class="header__logo logo header__logo--indent">
-                <a href="index.html"><img class="logo__pic" src="images/logo.png" alt=""></a>
+            <div class="header__logo logo logo--bg logo--indent header__logo--indent">
+                <a href="index.html" class="logo__text">ТЕХНОМАРТ</a>
                 <div class="logo__shadow"></div>
             </div>
             <div class="header__element">
                 <div class="header__icon header__icon--indent">
                     <svg class="svg">
                         <use xlink:href="#icon-search"></use>
-                </svg>
-            </div>
-                <div class="header__text">Поиск:</div>
+                    </svg>
+                </div>
+<!--            <div class="header__text">Поиск:</div>-->
+                <input class="header__text" type="search" id="search" placeholder="Поиск:" />
             </div>
         </div>
         <div class="header__block header__block--indent">
@@ -164,19 +163,19 @@
 
 <!--   2   -->
 <section class="main-sect main-sect--bg">
-    <div class="main-sect__warp main-sect__warp--indent">
+    <div class="main-sect__warp warps main-sect__warp warps--indent">
         <div class="main-sect__content main-sect__content--indent">
             <div class="main-sect__label main-sect__label--indent">Интернет-магазин<br>
                 строительных материалов<br>
                 и инструментов для ремонта</div>
-            <div class="main-sect__input-block">
-                <input class="main-sect__input" type="text" placeholder="+7 (812) 555-05-55">
+            <div class="main-sect__block">
+                <span class="main-sect__phone">+7 (812) 555-05-55</span>
                 <div class="main-sect__icon">
                     <svg class="svg">
                         <use xlink:href="#icon-phone"></use>
                     </svg>
                 </div>
-                <div class="main-sect__input-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+                <div class="main-sect__text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
             </div>
             <div class="main-sect__buttons">
                 <div class="main-sect__button button button--white button--with-icon">
@@ -205,9 +204,9 @@
 
 <!--   3   -->
 <section class="products products--indent ">
-    <div class="products__warp">
-        <div class="products__items row">
-            <div class="products__item col-4">
+    <div class="products__warp warps">
+        <div class="products__items">
+            <div class="products__item">
                 <div class="cart cart--color-honey cart--indent new">
                     <div class="cart__name cart__name--indent">Материалы</div>
                     <div class="cart__button button button--black button--radius ">на любой вкус</div>
@@ -218,7 +217,7 @@
                     </div>
                 </div>
             </div>
-            <div class="products__item col-4">
+            <div class="products__item">
                 <div class="cart cart--color-sky cart--indent">
                     <div class="cart__name cart__name--indent">Инструмент</div>
                     <div class="cart__button button button--black button--radius ">НА ВСЕ СЛУЧАИ</div>
@@ -229,7 +228,7 @@
                     </div>
                 </div>
             </div>
-            <div class="products__item col-4">
+            <div class="products__item">
                 <div class="cart cart--color-purple cart--indent">
                     <div class="cart__name cart__name--indent">Техника</div>
                     <div class="cart__button button button--black button--radius ">для стройки</div>
@@ -241,8 +240,8 @@
                 </div>
             </div>
         </div>
-        <div class="products__items row">
-            <div class="products__item col-8">
+        <div class="products__items">
+            <div class="products__item products__item--slider">
                 <div class="cart cart--x2">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
@@ -283,7 +282,7 @@
                     </div>
                 </div>
             </div>
-            <div class="products__item col-4">
+            <div class="products__item">
                 <div class="cart cart--color-olive cart--indent">
                     <div class="cart__name cart__name--indent">Скидки 50%</div>
                     <div class="cart__button button button--black button--radius ">На 350 ТОВАРОВ</div>
@@ -310,7 +309,7 @@
 <!--   4   -->
 
 <section class="popular popular--indent">
-    <div class="popular__warp">
+    <div class="popular__warp warps">
         <div class="popular__wrapper popular__wrapper--color popular__wrapper--indent">
             <h2 class="h2 popular__title">Популярные товары:</h2>
             <div class="popular__button button button--red">все поПулярные товары</div>
@@ -402,7 +401,7 @@
 <!--   5   -->
 
 <section class="service service--bg service service--indent">
-    <div class="service__warp service__warp--indent">
+    <div class="service__warp warps service__warp warps--indent">
         <h2 class="h2 service__title service__title--indent">Сервисы</h2>
         <div class="service__description service__description--indent">Хороший интернет-магазин отличается от плохого не только ценами!<br>
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</div>
@@ -448,7 +447,7 @@
 <!--   6   -->
 
 <section class="company company--bg company--indent">
-    <div class="company__warp company__warp--indent">
+    <div class="company__warp warps company__warp warps--indent">
         <div class="company__content">
             <div class="company__about">
                 <h2 class="h2 company__title company__title--indent">КОМПАНИЯ «Техномарт»</h2>
@@ -504,13 +503,13 @@
 <!--   7   -->
 
 <section class="cellar cellar--bg cellar--indent">
-    <div class="cellar__warp cellar__warp--indent">
+    <div class="cellar__warp warps cellar__warp warps--indent">
         <div class="cellar__wrapper">
-            <div class="cellar__logo logo cellar__logo--indent">
-                <img class="logo__pic" src="images/logo-footer.png" alt="">
+            <div class="cellar__logo logo logo--bg logo--footer-indent cellar__logo--indent">
+                <a href="index.html" class="logo__footer-text">ТЕХНОМАРТ</a>
                 <div class="logo__shadow"></div>
             </div>
-            <div class="cellar__text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</div>
+            <div class="cellar__text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><a class="cellar__text" href="tel:7 (812) 555-05-55">7 (812) 555-05-55</a></div>
         </div>
         <ul class="cellar__nav">
             <li class="cellar__item">Компания</li>
@@ -529,7 +528,7 @@
 <!--   8   -->
 
 <footer class="footer footer--bg footer--indent">
-    <div class="footer__warp footer__warp--indent">
+    <div class="footer__warp warps footer__warp warps--indent">
         <div class="footer__copyright">© 2010–2019 Компания «Техномарт»<br>Все права защищены</div>
         <div class="footer__social social">
             <a href="#" class="social__item social__item--indent social__item--dark">
@@ -583,7 +582,6 @@
             bulletActiveClass: 'active',
             bulletElement: 'div',
             clickable:  true,
-
         },
         // Navigation arrows
         navigation: {

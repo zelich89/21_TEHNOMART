@@ -3,7 +3,6 @@
   justify-content: start;
   color: white;
   &__warp {
-    @extend .warps;
     display: flex;
     padding-right: 10px;
     padding-left: 10px;
@@ -27,7 +26,8 @@
   &__element {
     display: flex;
     align-items: center;
-    width: 150px;
+    position: relative;
+    //width: 150px;
   }
   &__icon {
     &--indent {
@@ -37,12 +37,29 @@
   }
   &__text {
     font-family: 'Cuprum', sans-serif;
-    @include font(normal, 18px, 1);
+    @include font(normal, 18px, 28px);
+    background-color: transparent;
+    border: none;
+    color: transparent;
+    border-bottom: 1px solid transparent;
+    transition: all .5s ease;
+    &::-webkit-input-placeholder {
+      color: white;
+    }
+    &:focus, &:active {
+      border-bottom-color: rgba(255,255,255,.2);
+      color: white;
+      &::-webkit-input-placeholder {
+        color: transparent;
+      }
+    }
   }
   &__button {
-    width: 140px;
     text-align: center;
-    @include font(normal, 17px, 1);
+    @include font(normal, 17px, 17px);
+    /*    overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;*/
   }
   .svg {
     @include square-size(16px);

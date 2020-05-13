@@ -2,7 +2,6 @@
   position: relative;
   z-index: 2 ;
   &__warp {
-    @extend .warps;
     &--indent {
       padding-right: 10px;
       padding-left: 10px;

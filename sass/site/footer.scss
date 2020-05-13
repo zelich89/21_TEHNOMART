@@ -1,6 +1,5 @@
 .footer {
   &__warp {
-    @extend .warps;
     display: flex;
     justify-content: space-between;
     &--indent {

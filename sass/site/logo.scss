@@ -1,6 +1,22 @@
 .logo {
   display: inline-block;
   position: relative;
+  &__text {
+    font-family: 'Cuprum', sans-serif;
+    @include font(normal, 24px, 24px);
+    color: white;
+    &:hover {
+      color: currentColor;
+    }
+  }
+  &__footer-text {
+    font-family: 'Cuprum', sans-serif;
+    @include font(normal, 30px, 30px);
+    color: white;
+    &:hover {
+      color: currentColor;
+    }
+  }
   &__shadow {
     &:after {
       position: absolute;
@@ -12,5 +28,14 @@
       background-color: #b52933;
       z-index: 1;
     }
+  }
+  &--bg {
+    background-color: $primary;
+  }
+  &--indent {
+    padding: 12px 50px 6px;
+  }
+  &--footer-indent {
+    padding: 20px 50px 25px;
   }
 }

@@ -1,6 +1,5 @@
 .main-sect {
   &__warp {
-    @extend .warps;
     &--indent {
       padding-right: 10px;
       padding-left: 10px;
@@ -28,7 +27,7 @@
       padding-left: 50px;
     }
   }
-  &__input-block {
+  &__block {
     position: relative;
     width: 33%;
     //padding-right: 10px;
@@ -37,7 +36,7 @@
     align-items: center;
     flex-direction: column;
   }
-  &__input {
+  &__phone {
     background-color: transparent;
     padding: 4px 12px 4px 40px;
     border: 4px solid white;
@@ -48,7 +47,7 @@
        color: $primary;
     }
   }
-  &__input-text {
+  &__text {
     @include font(normal, 14px, 24px);
   }
   &__icon {
@@ -62,10 +61,12 @@
       @include square-size(20px);
     }
   }
-  &__buttons {
+  &__buttons-block {
     width: 33%;
     padding-right: 10px;
     padding-left: 10px;
+  }
+  &__buttons {
     display: flex;
     align-items: start;
     justify-content: flex-end;
@@ -78,6 +79,21 @@
     //&:nth-child(n+1) {
     //  margin-right: 10px;
     //}
+  }
+  &__links {
+    display: flex;
+    justify-content: center;
+    & *:not(:last-child) {
+      margin-right: 10px;
+    }
+    &--indent {
+      margin-top: 10px;
+    }
+  }
+  &__link {
+    text-decoration: underline;
+    transition: all $transition-time ease;
+    color: black;
   }
   &__nav {
     border: 5px solid fuchsia;
