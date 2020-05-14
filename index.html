@@ -140,34 +140,37 @@
             </div>
         </div>
         <div class="header__block header__block--indent">
-            <div class="header__button button button--transparent button--with-icon">
-                <div class="button__icon">
+            <div class="header__button btn btn--single">
+                <div class="btn__icon">
                     <svg class="svg">
                         <use xlink:href="#icon-bookmark"></use>
                     </svg>
                 </div>
                 Закладки: <span class="header__num">0</span>
             </div>
-            <div class="header__button button button--transparent button--with-icon">
-                <div class="button__icon">
+            <div class="header__button btn btn--single">
+                <div class="btn__icon">
                     <svg class="svg">
                         <use xlink:href="#icon-cart"></use>
                     </svg>
                 </div>
                 Корзина: <span class="header__num">0</span>
             </div>
-            <a href="#" class="header__button button button--green">Оформить заказ</a>
+            <div class="header__button btn btn--green">
+                Оформить заказ
+            </div>
         </div>
     </div>
 </header>
 
 <!--   2   -->
 <section class="main-sect main-sect--bg">
-    <div class="main-sect__warp warps main-sect__warp warps--indent">
+    <div class="main-sect__warp warps main-sect__warp--indent">
         <div class="main-sect__content main-sect__content--indent">
             <div class="main-sect__label main-sect__label--indent">Интернет-магазин<br>
                 строительных материалов<br>
                 и инструментов для ремонта</div>
+
             <div class="main-sect__block">
                 <span class="main-sect__phone">+7 (812) 555-05-55</span>
                 <div class="main-sect__icon">
@@ -175,25 +178,29 @@
                         <use xlink:href="#icon-phone"></use>
                     </svg>
                 </div>
-                <div class="main-sect__text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+                <div class="main-sect__text main-sect__text--indent">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
             </div>
-            <div class="main-sect__buttons">
-                <div class="main-sect__button button button--white button--with-icon">
-                    <div class="button__icon">
-                        <svg class="svg">
-                            <use xlink:href="#icon-login"></use>
-                        </svg>
+            <div class="main-sect__buttons-block">
+                <div class="main-sect__buttons">
+                    <div class="main-sect__button btn btn--single btn--white">
+                        Войти
+                        <div class="btn__icon">
+                            <svg class="svg">
+                                <use xlink:href="#icon-login"></use>
+                            </svg>
+                        </div>
                     </div>
-                    Войти
+                    <div class="main-sect__button btn btn--white">
+                        Регистрация
+                    </div>
                 </div>
-                <div class="main-sect__button button button--white">Регистрация</div>
             </div>
         </div>
         <div class="main_sect__nav top-nav main_sect__nav--indent">
             <ul class="top-nav__navbar top-nav__navbar--color">
-                <li class="top-nav__item"><a class="top-nav__link" href="index.html">Главная</a></li>
+                <li class="top-nav__item"><a href="index.html" class="top-nav__link">Главная</a></li>
                 <li class="top-nav__item">Компания</li>
-                <li class="top-nav__item"><a class="top-nav__link" href="catalog.html">Каталог</a></li>
+                <li class="top-nav__item"><a href="catalog.html" class="top-nav__link">Каталог</a></li>
                 <li class="top-nav__item">Новости</li>
                 <li class="top-nav__item">Спецпредложения</li>
                 <li class="top-nav__item">Доставка</li>

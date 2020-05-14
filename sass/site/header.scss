@@ -53,6 +53,7 @@
     }
   }
   &__button {
+    width: 33.3%;
     text-align: center;
     @include font(normal, 17px, 17px);
     /*    overflow:hidden;

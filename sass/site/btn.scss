@@ -1,0 +1,80 @@
+.btn {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-grow: 1;
+  padding: 12px 16px;
+  cursor: pointer;
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    .svg {
+      opacity: .3;
+      @include square-size(20px);
+    }
+    &--right {
+      left: auto;
+      right: 10px;
+    }
+  }
+  &--single {
+    padding-left: 50px;
+  }
+  &--double {
+    margin-left: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  &--green {
+    background-color: #63a63e;
+    color: white;
+    :hover {
+      color: rgba(white,.8);
+    }
+  }
+  &--red {
+    background-color: #EE3643;
+    border-radius: 2px;
+  }
+  &--white {
+    background-color: white;
+  }
+}
+
+.btn2 {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-grow: 1;
+  cursor: pointer;
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    .svg {
+      opacity: .3;
+      @include square-size(20px);
+    }
+    &--right {
+      left: auto;
+      right: 10px;
+    }
+  }
+  &--single {
+    padding-left: 40px;
+  }
+  &--double {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  &--white {
+    background-color: white;
+  }
+}
