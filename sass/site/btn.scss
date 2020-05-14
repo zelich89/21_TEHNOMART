@@ -1,6 +1,6 @@
 .btn {
   position: relative;
-  display: block;
+  display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -26,8 +26,14 @@
   }
   &--double {
     margin-left: 20px;
-    padding-right: 50px;
+    padding-right: 40px;
     padding-left: 50px;
+  }
+  &--radius {
+    border-radius: 3px;
+  }
+  &--border {
+    border: 1px solid #f7f3ec;
   }
   &--green {
     background-color: #63a63e;
@@ -38,7 +44,12 @@
   }
   &--red {
     background-color: #EE3643;
+    color: white;
     border-radius: 2px;
+  }
+  &--black {
+    background-color: rgba(black, .1);
+    width: 135px;
   }
   &--white {
     background-color: white;
