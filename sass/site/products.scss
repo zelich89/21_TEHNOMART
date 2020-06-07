@@ -11,6 +11,16 @@
       margin-top: 20px;
     }
   }
+  &__container {
+    overflow: hidden;
+  }
+  &__wrapper {
+    display: flex;
+    //flex-wrap: wrap;
+  }
+  &__slide {
+    flex-shrink: 1;
+  }
   &__items {
     display: flex;
     flex-wrap: wrap;
