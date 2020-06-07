@@ -17,6 +17,10 @@
   &__text {
     @include font(normal, 18px, 24px);
     color: #ffffff;
+  }
+  &__numb {
+    @include font(normal, 18px, 24px);
+    color: #ffffff;
     &:hover, &:visited {
       color: rgba(255,255,255,.7);
     }

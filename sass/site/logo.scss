@@ -18,16 +18,14 @@
     }
   }
   &__shadow {
-    &:after {
-      position: absolute;
-      content: '';
-      left: 0;
-      right: 0;
-      bottom: -5px;
-      height: 5px;
-      background-color: #b52933;
-      z-index: 1;
-    }
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 5px;
+    background-color: #b52933;
+    z-index: 1;
   }
   &--bg {
     background-color: $primary;

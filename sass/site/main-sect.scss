@@ -43,8 +43,13 @@
     color: $primary;
     width: 100%;
     @include font(normal, 21px, 28px);
+    transition: color $transition-time ease;
      &::-webkit-input-placeholder {
        color: $primary;
+    }
+    &:hover {
+      color: darken($primary, 15%);
+
     }
   }
   &__text {

@@ -125,17 +125,18 @@
 <header class="header header--bg">
     <div class="header__warp warps container">
         <div class="header__block">
-            <div class="`header__logo logo logo--bg logo--indent header__logo--indent`">
-                <a href="index.html" class="logo__text">ТЕХНОМАРТ</a>
-                <div class="logo__shadow"></div>
-            </div>
+            <a href="index.html" class="logo__text">
+                <div class="`header__logo logo logo--bg logo--indent header__logo--indent`">
+                    <div class="logo__shadow"></div>
+                    ТЕХНОМАРТ
+                </div>
+            </a>
             <div class="header__element">
-                <div class="header__icon header__icon--indent">
+                <label class="header__icon header__icon--indent" for="search">
                     <svg class="svg">
                         <use xlink:href="#icon-search"></use>
                     </svg>
-                </div>
-                <!--            <div class="header__text">Поиск:</div>-->
+                </label>
                 <input class="header__text" type="search" id="search" placeholder="Поиск:" />
             </div>
         </div>
@@ -417,9 +418,13 @@
                 <div class="service__specific active">Доставка</div>
                 <div class="service__specific">Гарантия</div>
                 <div class="service__specific">Кредит</div>
+
+                <div class="service__shadow-old">
+                    <span></span>
+                </div>
             </div>
             <div class="service__items">
-                <div class="service__item service__item--indent">
+                <div class="service__item active service__item--indent">
                     <div class="service__text service__text--indent">
                         <div class="service__name service__name--indent">Доставка</div>
                         <div class="service__declaration">Мы с удовольствием доставим ваш товар прямо
@@ -438,7 +443,7 @@
                     </div>
                     <img class="service__img" src="images/s-guarantee.png" alt="">
                 </div>
-                <div class="service__item active service__item--indent">
+                <div class="service__item service__item--indent">
                     <div class="service__text service__text--indent">
                         <div class="service__name service__name--indent">Кредит</div>
                         <div class="service__declaration">Залезть в долговую яму стало проще!
@@ -512,11 +517,13 @@
 <section class="cellar cellar--bg cellar--indent">
     <div class="cellar__warp warps cellar__warp warps--indent">
         <div class="cellar__wrapper">
-            <div class="cellar__logo logo logo--bg logo--footer-indent cellar__logo--indent">
-                <a href="index.html" class="logo__footer-text">ТЕХНОМАРТ</a>
-                <div class="logo__shadow"></div>
-            </div>
-            <div class="cellar__text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><a class="cellar__text" href="tel:7 (812) 555-05-55">7 (812) 555-05-55</a></div>
+            <a href="index.html" class="logo__footer-text">
+                <div class="cellar__logo logo logo--bg logo--footer-indent cellar__logo--indent">
+                    <div class="logo__shadow"></div>
+                    ТЕХНОМАРТ
+                </div>
+            </a>
+            <div class="cellar__text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><a class="cellar__numb" href="tel:78125550555">7 (812) 555-05-55</a></div>
         </div>
         <ul class="cellar__nav">
             <li class="cellar__item">Компания</li>
@@ -577,7 +584,7 @@
 
 <!-- Initialize Swiper -->
 <script>
-    var swiper1 = new Swiper('.swiper-container1', {
+    var swiper1 = new Swiper('.swiper-container', {
         loop: true,
         speed: 500,
 

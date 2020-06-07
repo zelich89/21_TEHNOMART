@@ -1,6 +1,7 @@
 .btn {
   position: relative;
   display: inline-block;
+  text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -42,6 +43,21 @@
       color: rgba(white,.8);
     }
   }
+  &--green-with {
+    background-color: #63A63E;
+    border: 3px solid #63A63E;
+    color: white;
+    border-bottom-color: #367315;
+    transition: all $transition-time ease;
+    &:hover {
+      background-color: #fff;
+      border-color: #63A63E;
+      color: #32425C;
+    }
+    .svg {
+      opacity: .3;
+    }
+  }
   &--red {
     background-color: #EE3643;
     color: white;
@@ -50,40 +66,6 @@
   &--black {
     background-color: rgba(black, .1);
     width: 135px;
-  }
-  &--white {
-    background-color: white;
-  }
-}
-
-.btn2 {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  flex-grow: 1;
-  cursor: pointer;
-  &__icon {
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    transform: translateY(-50%);
-    .svg {
-      opacity: .3;
-      @include square-size(20px);
-    }
-    &--right {
-      left: auto;
-      right: 10px;
-    }
-  }
-  &--single {
-    padding-left: 40px;
-  }
-  &--double {
-    padding-right: 40px;
-    padding-left: 40px;
   }
   &--white {
     background-color: white;

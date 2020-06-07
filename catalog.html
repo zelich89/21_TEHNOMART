@@ -142,17 +142,18 @@
 <header class="header header--bg">
     <div class="header__warp warps">
         <div class="header__block">
-            <div class="`header__logo logo logo--bg logo--indent header__logo--indent`">
-                <a href="index.html" class="logo__text">ТЕХНОМАРТ</a>
-                <div class="logo__shadow"></div>
-            </div>
+            <a href="index.html" class="logo__text">
+                <div class="`header__logo logo logo--bg logo--indent header__logo--indent`">
+                    <div class="logo__shadow"></div>
+                    ТЕХНОМАРТ
+                </div>
+            </a>
             <div class="header__element">
-                <div class="header__icon header__icon--indent">
+                <label class="header__icon header__icon--indent" for="search">
                     <svg class="svg">
                         <use xlink:href="#icon-search"></use>
                     </svg>
-                </div>
-                <!--            <div class="header__text">Поиск:</div>-->
+                </label>
                 <input class="header__text" type="search" id="search" placeholder="Поиск:" />
             </div>
         </div>
@@ -173,7 +174,7 @@
                 </div>
                 Корзина: <span class="header__num">10</span>
             </div>
-            <div class="header__button button button--green">Оформить заказ</div>
+            <div class="header__button btn btn--green">Оформить заказ</div>
         </div>
     </div>
 </header>
@@ -187,7 +188,7 @@
                 и инструментов для ремонта</div>
 
             <div class="main-sect__block">
-                <span class="main-sect__phone">+7 (812) 555-05-55</span>
+                <a  class="main-sect__phone" href="tel:78125550555">+7 (812) 555-05-55</a>
                 <div class="main-sect__icon">
                     <svg class="svg">
                         <use xlink:href="#icon-phone"></use>
@@ -401,14 +402,14 @@
                                 <img class="element__image element__image--indent" src="images/perforator_3.png" alt="">
                                 <div class="element__add">
                                     <div class="element__block">
-                                        <div class="element__button button button--green-with button--radius button--with-icon">
-                                            <div class="button__icon">
+                                        <div class="element__button btn btn--green-with btn--radius btn--single">
+                                            <div class="btn__icon">
                                                 <svg class="svg">
                                                     <use xlink:href="#icon-cart"></use>
                                                 </svg>
                                             </div>
                                             Купить</div>
-                                        <div class="element__button button button--green-with button--radius">В закладки</div>
+                                        <div class="element__button btn btn--green-with btn--radius">В закладки</div>
                                     </div>
                                 </div>
                             </div>
@@ -423,14 +424,14 @@
                                 <img class="element__image element__image--indent" src="images/perforator_3.png" alt="">
                                 <div class="element__add">
                                     <div class="element__block">
-                                        <div class="element__button button button--green-with button--radius button--with-icon">
-                                            <div class="button__icon">
+                                        <div class="element__button btn btn--green-with btn--radius btn--single">
+                                            <div class=" btn__icon">
                                                 <svg class="svg">
                                                     <use xlink:href="#icon-cart"></use>
                                                 </svg>
                                             </div>
                                             Купить</div>
-                                        <div class="element__button button button--green-with button--radius">В закладки</div>
+                                        <div class="element__button btn btn--green-with btn--radius">В закладки</div>
                                     </div>
                                 </div>
                             </div>
@@ -446,14 +447,14 @@
                                 <img class="element__image element__image--indent" src="images/perforator_3.png" alt="">
                                 <div class="element__add">
                                     <div class="element__block">
-                                        <div class="element__button button button--green-with button--radius button--with-icon">
-                                            <div class="button__icon">
+                                        <div class="element__button btn btn--green-with btn--radius btn--single">
+                                            <div class=" btn__icon">
                                                 <svg class="svg">
                                                     <use xlink:href="#icon-cart"></use>
                                                 </svg>
                                             </div>
                                             Купить</div>
-                                        <div class="element__button button button--green-with button--radius">В закладки</div>
+                                        <div class="element__button btn btn--green-with btn--radius">В закладки</div>
                                     </div>
                                 </div>
                             </div>
@@ -469,14 +470,14 @@
                                 <img class="element__image element__image--indent" src="images/perforator_3.png" alt="">
                                 <div class="element__add">
                                     <div class="element__block">
-                                        <div class="element__button button button--green-with button--radius button--with-icon">
-                                            <div class="button__icon">
+                                        <div class="element__button btn btn--green-with btn--radius btn--single">
+                                            <div class=" btn__icon">
                                                 <svg class="svg">
                                                     <use xlink:href="#icon-cart"></use>
                                                 </svg>
                                             </div>
                                             Купить</div>
-                                        <div class="element__button button button--green-with button--radius">В закладки</div>
+                                        <div class="element__button btn btn--green-with btn--radius">В закладки</div>
                                     </div>
                                 </div>
                             </div>
@@ -491,14 +492,14 @@
                                 <img class="element__image element__image--indent" src="images/perforator_3.png" alt="">
                                 <div class="element__add">
                                     <div class="element__block">
-                                        <div class="element__button button button--green-with button--radius button--with-icon">
-                                            <div class="button__icon">
+                                        <div class="element__button btn btn--green-with btn--radius btn--single">
+                                            <div class=" btn__icon">
                                                 <svg class="svg">
                                                     <use xlink:href="#icon-cart"></use>
                                                 </svg>
                                             </div>
                                             Купить</div>
-                                        <div class="element__button button button--green-with button--radius">В закладки</div>
+                                        <div class="element__button btn btn--green-with btn--radius">В закладки</div>
                                     </div>
                                 </div>
                             </div>
@@ -509,7 +510,21 @@
                     </div>
                     <div class="catalog__item catalog__item--indent">
                         <div class="element">
-                            <img class="element__image element__image--indent" src="images/perforator_3.png" alt="">
+                            <div class="element__image-wrapper element__image-wrapper--hov">
+                                <img class="element__image element__image--indent" src="images/perforator_3.png" alt="">
+                                <div class="element__add">
+                                    <div class="element__block">
+                                        <div class="element__button btn btn--green-with btn--radius btn--single">
+                                            <div class=" btn__icon">
+                                                <svg class="svg">
+                                                    <use xlink:href="#icon-cart"></use>
+                                                </svg>
+                                            </div>
+                                            Купить</div>
+                                        <div class="element__button btn btn--green-with btn--radius">В закладки</div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="element__isp element__isp--indent">Перфоратор BOSCH BFG 6000</div>
                             <div class="element__old-price element__old-price--indent">32500 Р.</div>
                             <div class="element__price element__price--indent">25500 Р.</div>
@@ -521,14 +536,14 @@
                                 <img class="element__image element__image--indent" src="images/perforator_3.png" alt="">
                                 <div class="element__add">
                                     <div class="element__block">
-                                        <div class="element__button button button--green-with button--radius button--with-icon">
-                                            <div class="button__icon">
+                                        <div class="element__button btn btn--green-with btn--radius btn--single">
+                                            <div class=" btn__icon">
                                                 <svg class="svg">
                                                     <use xlink:href="#icon-cart"></use>
                                                 </svg>
                                             </div>
                                             Купить</div>
-                                        <div class="element__button button button--green-with button--radius">В закладки</div>
+                                        <div class="element__button btn btn--green-with btn--radius">В закладки</div>
                                     </div>
                                 </div>
                             </div>
@@ -543,14 +558,14 @@
                                 <img class="element__image element__image--indent" src="images/perforator_3.png" alt="">
                                 <div class="element__add">
                                     <div class="element__block">
-                                        <div class="element__button button button--green-with button--radius button--with-icon">
-                                            <div class="button__icon">
+                                        <div class="element__button btn btn--green-with btn--radius btn--single">
+                                            <div class=" btn__icon">
                                                 <svg class="svg">
                                                     <use xlink:href="#icon-cart"></use>
                                                 </svg>
                                             </div>
                                             Купить</div>
-                                        <div class="element__button button button--green-with button--radius">В закладки</div>
+                                        <div class="element__button btn btn--green-with btn--radius">В закладки</div>
                                     </div>
                                 </div>
                             </div>
@@ -565,14 +580,14 @@
                                 <img class="element__image element__image--indent" src="images/perforator_3.png" alt="">
                                 <div class="element__add">
                                     <div class="element__block">
-                                        <div class="element__button button button--green-with button--radius button--with-icon">
-                                            <div class="button__icon">
+                                        <div class="element__button btn btn--green-with btn--radius btn--single">
+                                            <div class=" btn__icon">
                                                 <svg class="svg">
                                                     <use xlink:href="#icon-cart"></use>
                                                 </svg>
                                             </div>
                                             Купить</div>
-                                        <div class="element__button button button--green-with button--radius">В закладки</div>
+                                        <div class="element__button btn btn--green-with btn--radius">В закладки</div>
                                     </div>
                                 </div>
                             </div>
@@ -618,11 +633,13 @@
 <section class="cellar cellar--bg cellar--indent">
     <div class="cellar__warp warps cellar__warp--indent">
         <div class="cellar__wrapper">
-            <div class="cellar__logo logo logo--bg logo--footer-indent cellar__logo--indent">
-                <a href="index.html" class="logo__footer-text">ТЕХНОМАРТ</a>
+            <a href="index.html" class="logo__footer-text">
+                <div class="cellar__logo logo logo--bg logo--footer-indent cellar__logo--indent">
                 <div class="logo__shadow"></div>
+                ТЕХНОМАРТ
             </div>
-            <div class="cellar__text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><a class="cellar__text" href="tel:7 (812) 555-05-55">7 (812) 555-05-55</a></div>
+            </a>
+            <div class="cellar__text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><a class="cellar__numb" href="tel:78125550555">7 (812) 555-05-55</a></div>
         </div>
         <ul class="cellar__nav">
             <li class="cellar__item">Компания</li>
@@ -663,7 +680,7 @@
         <div class="footer__shapes">
             <div class="footer__item">
                 Обратная связь:
-                <a href="#" class="footer__link">
+                <a href="mailto:Email@Email.com" class="footer__link">
                     Email@Email.com
                 </a>
             </div>
